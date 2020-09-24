@@ -1,0 +1,6 @@
+pandas
+scikit-learn
+tensorflow
+confluent-kafka
+avro-python3
+requests

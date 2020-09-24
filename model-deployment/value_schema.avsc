@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "ValueSchema",
+  "namespace": "com.firasesbai",
+  "fields": [
+    {
+      "name": "sales_forecast",
+      "type": "array",
+      "fields": "int"
+    }
+  ]
+}
