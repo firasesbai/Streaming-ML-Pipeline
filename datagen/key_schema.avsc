@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "KeySchema",
+  "namespace": "com.firasesbai",
+  "fields": [
+    {
+      "name": "id",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    }
+  ]
+}

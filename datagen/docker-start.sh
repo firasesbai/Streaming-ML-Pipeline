@@ -1,0 +1,1 @@
+docker run --name datagen --network=kafka-stack-network --env-file data-producer.env -d datagen:1.0

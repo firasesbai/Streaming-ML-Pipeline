@@ -1,0 +1,1 @@
+docker build --tag datagen:1.0 .
