@@ -17,6 +17,21 @@ A Jupyter Notebook containing some exploratory data analysis and an implementati
     - KSQL Server
     - AkHQ
 
+## Data Generation
+
+1. Create a new topic called ```raw-data``` by accessing AKHQ, a kafka management GUI, using ``` https://localhost:8080```
+
+![](images/datagen-topic.PNG)
+
+2. Build and start the datagen docker container which will produce some test data to kafka by running the following commands:
+```
+cd datagen
+
+./docker-build.sh
+
+./docker-start.sh
+```
+
 ## Model Deployment
 The following architecture demonstrates the different components involved and their interactions:
 
