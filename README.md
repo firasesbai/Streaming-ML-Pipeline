@@ -5,6 +5,18 @@ For illustration purposes and to focus more on taking Machine Learning models in
 
 A Jupyter Notebook containing some exploratory data analysis and an implementation of a simple LSTM model can be found [here](./store-item-demand-forecasting-lstm.ipynb).
 
+## Setup
+
+1. Create a new docker network by running ``` docker network create -d bridge kafka-stack-network```
+
+2. Start the following services by running ``` docker-compose up -d ```:
+    
+    - Zookeeper
+    - Kafka 
+    - Schema Registry
+    - KSQL Server
+    - AkHQ
+
 ## Model Deployment
 The following architecture demonstrates the different components involved and their interactions:
 
