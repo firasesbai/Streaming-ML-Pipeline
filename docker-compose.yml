@@ -40,20 +40,6 @@ services:
         SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: 'zookeeper:2181'
         SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
       restart: always
-
-  ksqldb-server:
-      image: confluentinc/cp-ksql-server:5.3.1
-      container_name: ksqldb-server
-      depends_on:
-        - kafka
-      ports:
-        - "8088:8088"
-      environment:
-        KSQL_BOOTSTRAP_SERVERS: 'kafka:19092'
-        KSQL_HOST_NAME: ksqldb-server
-        KSQL_LISTENERS: http://0.0.0.0:8088/
-        KSQL_KSQL_SCHEMA_REGISTRY_URL: "http://schema-registry:8081"
-      restart: always
   
   akhq:
       image: tchiotludo/akhq
