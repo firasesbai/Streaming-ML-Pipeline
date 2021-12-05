@@ -1,4 +1,4 @@
-# Streaming-ML-Pipelines
+# Streaming-ML-Pipeline
 
 ## Getting Started
 For illustration purposes and to focus more on taking Machine Learning models into production, we will be using data from the *Store Item Demand Forecasting's Kaggle Competition*. The objective of this competition is to predict 3 months of item-level sales data at different store locations. 
@@ -14,7 +14,6 @@ A Jupyter Notebook containing some exploratory data analysis and an implementati
     - Zookeeper
     - Kafka 
     - Schema Registry
-    - KSQL Server
     - AkHQ
 
 ## Data Generation
